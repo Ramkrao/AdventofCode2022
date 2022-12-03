@@ -5,7 +5,6 @@ def get_priority(c):
     return ord(c) - 96
 
 def split_find_and_priority(line):
-  print(line[:len(line)//2], line[len(line)//2:])
   for c in line[:len(line)//2]:
     if line[len(line)//2:].find(c) != -1:
       return get_priority(c)
